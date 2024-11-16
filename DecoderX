@@ -1,0 +1,121 @@
+import os, random,sys,time
+def print_slowly(text, delay=0.1):
+   for char in text:
+       print(char, end='', flush=True)
+       time.sleep(delay)
+   print()
+from cfonts import render
+P = '\x1b[1;97m'
+H = '\x1b[1;92m'
+K = '\x1b[1;93m'
+k = '\x1b[93m'
+m = '\x1b[1;91m'
+k = '\x1b[93m'
+h = '\x1b[1;92m'
+u = '\x1b[95m'
+kk = '\x1b[33m'
+b = '\x1b[1;96m'
+N = '\x1b[0m'
+asu = random.choice([m, k, h, u, b])
+menu = render('JOKER', colors=['green', 'white'], align='center')
+print(menu)
+print('')
+print('— — — — — — — — — — — — — — — — — — — — — — — — — — — — — —')
+print(f'                  {P}[{H} 𝗡𝗔𝗠𝗘 - 𝗡𝗔𝗪𝗔𝗕𝗜𝘅𝗝𝗢𝗞𝗘𝗥  •{H}{P}]')
+print('— — — — — — — — — — — — — — — — — — — — — — — — — — — — — —')
+print(f'                  {P}[{H} 𝗧𝗢𝗢𝗟 - 𝗗𝗘𝗖𝗢𝗗𝗘𝗥𝘅  •{H}{P}]')
+print('— — — — — — — — — — — — — — — — — — — — — — — — — — — — — —')
+print(f'                  {P}[{H} 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 - 𝗔𝗹𝗹 𝗶𝗻 𝗢𝗻𝗲{H}{P}]')
+print('— — — — — — — — — — — — — — — — — — — — — — — — — — — — — —')
+
+print()
+print_slowly(' \x1b[41m\x1b[1;37m</> тσσℓ ¢σ∂є∂ ву נσкєя | @єz_χ4 • \x1b[0m\x1b[1;97m ')
+time.sleep(1.5)
+print('— — — — — — — — — — — — — — — — — — — — — — — — — — — — — —')
+print(f'{N}[{asu}</> 1 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m мαяsнαℓ   \x1b[0m\x1b[1;97m{N}')
+print()
+print(f"{N}[{asu}</> 2 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m ρутнση\033[09m 3.9  \x1b[0m\x1b[1;97m{N} ")
+print()
+print(f"{N}[{asu}</> 3 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m ρутнση\033[09m 3.11 \x1b[0m\x1b[1;97m{N}  ")
+print()
+print(f"{N}[{asu}</> 4 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m σвƒυѕ¢αтє \x1b[0m\x1b[1;97m{N}  ")
+print()
+print(f"{N}[{asu}</> 5 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m нуρєяιση \x1b[0m\x1b[1;97m{N} ")
+print()
+print(f"{N}[{asu}</> 6 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m ρуσвƒ \x1b[0m\x1b[1;97m{N} ")
+print()
+print(f"{N}[{asu}</> 7 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m ℓσ¢к \x1b[0m\x1b[1;97m{N} ")
+print()
+print(f"{N}[{asu}</> 8 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m нєχ \x1b[0m\x1b[1;97m{N} ")
+print()
+print(f"{N}[{asu}</> 9 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m єχє¢υтє \x1b[0m\x1b[1;97m{N} ")
+print()
+print(f"{N}[{asu}</> 10 {N}]{H}  Dₑcₒdₑ  {N}: \x1b[41m\x1b[1;37m c4 ᴄʏᴛʜᴏɴ  \x1b[0m\x1b[1;97m{N} ")
+print('— '*30)
+choice = input(" \x1b[41m\x1b[1;37m єηтєя ηυмвєя σƒ уσυя ¢нσι¢є ➤ \x1b[0m\x1b[1;97m ")
+print()
+print("\x1b[41m\x1b[1;37m ¢нσѕє тнє ρутнση νєяѕιση \x1b[0m\x1b[1;97m ")
+print("1. ρутнση 3.9")
+print("2. ρутнση 3.11")
+version_choice = input(" ➤ єηтєя ρутнση νєяѕιση: ")
+
+if version_choice == "1":
+   python_command = "➤ Python3.9"
+elif version_choice == "2":
+   python_command = "➤ Python3.11"
+else:
+   print_slowly("ᴜɴᴠᴀʟɪᴅ ᴘʏᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ, ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ!")
+   exit()
+
+if choice == "1":
+   print_slowly("• ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system(f"{python_command} dump.py")
+   os.system(f"{python_command} cv_marshal_pyc.py")
+   os.system("pycdc Joker.pyc > Decoded-Joker.py")
+   
+   os.system('rm -rf se_dump')
+   os.system('rm -rf Joker.py')
+   os.system('rm -rf Joker.pyc')
+   os.system('rm -rf se.py')
+
+elif choice == "2":
+   print_slowly(" ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system("python3.9 9.py se.py") 
+   
+elif choice == "3":
+   print_slowly("• ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system(f"{python_command} 11.py")
+   
+elif choice == "4":
+   print_slowly("• ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system(f"{python_command} dec-obf.py")
+   
+elif choice == "5":
+   print_slowly("• ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system(f"{python_command} dec-hyperion.py")
+
+elif choice == "6":
+   print_slowly("• ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system("python dec-Pyobf.py")
+   
+elif choice == "7":
+   print_slowly("• ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system(f"{python_command} dec-lock.py")
+   time.sleep(0.5)
+   os.system(f"{python_command} 9.py")
+
+elif choice == "8":
+   print_slowly("• ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system("python dec-Hex.py")
+   
+elif choice == "9":
+   print_slowly("• ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system("python dec-Exec.py")
+   
+elif choice == "10":
+   print_slowly("• ρℓєαѕє ωαιт, тσσℓ ιѕ яυηηιηg..! ")
+   os.system(f"{python_command} dec-C4.py")
+   
+   	
+else:
+   print_slowly("> ᴜɴᴠᴀʟɪᴅ ᴄʜᴏɪᴄᴇ, ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ!")
